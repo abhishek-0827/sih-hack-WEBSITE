@@ -1,0 +1,29 @@
+/* Marquee.css */
+.marquee-container {
+    width: 100%;
+    background-color: #986301; /* Orange color similar to NDRF style */
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  .marquee-text {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #fff;
+    position:relative; /* Set to relative to move the text within the container */
+    animation: scroll-left 20s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%); /* Starts off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Moves completely to the left */
+    }
+  }
+  

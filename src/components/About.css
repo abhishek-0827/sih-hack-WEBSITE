@@ -1,0 +1,95 @@
+/* About.css */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background for readability */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color, text color, and transform */
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative; /* Ensure that hover effects work correctly */
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #e99000; /* Inherit color from parent */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 18px;
+    color: inherit; /* Inherit color from parent */
+    line-height: 1.8;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: left; /* Align text to the left for readability */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-item {
+    background: #fff;
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: left; /* Align text to the left for readability */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color, text color, and transform */
+}
+
+.about-item:hover {
+    background: linear-gradient(135deg, #ff9f00, #6f4e37);
+    color: #fff; /* White text on hover */
+    transform: translateY(-5px); /* Lift the item slightly */
+}
+
+.about-item h3 {
+    font-size: 28px;
+    color: inherit; /* Inherit color from parent */
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #1f4b99;
+    padding-bottom: 10px;
+}
+
+.about-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.about-item li {
+    font-size: 16px;
+    color: inherit; /* Inherit color from parent */
+    margin-bottom: 10px;
+}
+
+.about-item ul li {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-item {
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .about-item h3 {
+        font-size: 24px;
+    }
+}

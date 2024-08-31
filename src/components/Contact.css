@@ -1,0 +1,143 @@
+/* Contact.css */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background for readability */
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #1f4b99;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #1f4b99;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0d3a7e; /* Darker shade for hover effect */
+}
+
+/* Call Option Styles */
+.call-option {
+    font-size: 18px;
+    color: #555;
+}
+
+.call-option p {
+    margin-bottom: 10px;
+}
+
+.phone-link {
+    font-size: 20px;
+    color: #1f4b99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone-link:hover {
+    text-decoration: underline;
+}
+
+/* Optionally, add focus styles for accessibility */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1f4b99;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .contact-form button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Location input fields */
+.contact-form input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Location button styling */
+.contact-form button[type="button"] {
+    background-color: #ff9f00; /* Orange color for location button */
+    margin-bottom: 20px; /* Spacing between location and submit buttons */
+}
+
+.contact-form button[type="button"]:hover {
+    background-color: #cc7f00; /* Darker orange on hover */
+}
+
+/* Contact.css */
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this if necessary for consistent styling */
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
