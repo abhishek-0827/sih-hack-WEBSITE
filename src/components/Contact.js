@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Contact.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'; // Importing Leaflet components
 import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
-import { IoLocation } from "react-icons/io5";
 import emailjs from 'emailjs-com';
 
 function Contact() {
